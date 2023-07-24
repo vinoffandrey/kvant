@@ -1,0 +1,14 @@
+.turnir {
+
+	&__page {
+		img {
+			max-width: 100%;
+			height: aut;
+		}
+	}
+
+	&__text {
+		max-width: 1100px;
+		@include adaptiveValue("margin-bottom", 30, 15, $containerWidth, $minWidth, 1);
+	}
+}

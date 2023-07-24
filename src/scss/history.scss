@@ -1,0 +1,196 @@
+.history {
+
+	&__page-body {
+		span {
+			font-weight: 900;
+		}
+	}
+
+	&__title {
+	}
+
+	&__top {
+		@include adaptiveValue("margin-top", 40, 20, $containerWidth, $minWidth, 1);
+		display: flex;
+		@include adaptiveValue("gap", 40, 20, $containerWidth, $minWidth, 1);
+	}
+
+	&__top-left {
+		flex: 0 1 1100px;
+		p {
+			@include adaptiveValue("margin-top", 16, 10, $containerWidth, $minWidth, 1);
+			@include adaptiveValue("margin-bottom", 30, 15, $containerWidth, $minWidth, 1);
+		}
+	}
+
+	&__top-right {
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	&__date {
+		display: flex;
+		@include adaptiveValue("gap", 40, 20, $containerWidth, $minWidth, 1);
+		justify-content: space-between;
+		@include adaptiveValue("margin-bottom", 60, 30, $containerWidth, $minWidth, 1);
+		max-width: 1250px;
+		@media(max-width: 500px) {
+			flex-direction: column;
+			gap: 0;
+		}
+		ul {
+			max-width: 620px;
+		}
+	}
+
+	&__date-item {
+		@include adaptiveValue("margin-bottom", 30, 15, $containerWidth, $minWidth, 1);
+		span {
+			display: block;
+			@include adaptiveValue("margin-bottom", 16, 10, $containerWidth, $minWidth, 1);
+		}
+	}
+}
+
+.history {
+
+	&__kvant {
+		background-color: var(--unnamed, #E9F9FF);
+		@include adaptiveValue("padding-top", 80, 40, $containerWidth, $minWidth, 1);
+		@include adaptiveValue("padding-bottom", 80, 40, $containerWidth, $minWidth, 1);
+		.__container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			@include adaptiveValue("gap", 40, 20, $containerWidth, $minWidth, 1);
+			&.date {
+				align-items: flex-start;
+			}
+		}
+	}
+
+	&__kvant-left {
+		flex: 0 1 620px;
+		text-align: right;
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		@media(max-width: 1000px) {
+			display: none;
+		}
+	}
+
+	&__kvant-right {
+		flex: 0 1 1050px;
+		min-width: 650px;
+		@media(max-width: 1000px) {
+			min-width: 100%;
+		}
+	}
+
+	&__kvant-title {
+	}
+
+	&__kvant-date {
+		display: flex;
+		@include adaptiveValue("gap", 120, 20, $containerWidth, $minWidth, 1);
+		justify-content: flex-start;
+		@include adaptiveValue("margin-top", 40, 20, $containerWidth, $minWidth, 1);
+		@media(max-width: 500px) {
+			flex-direction: column;
+			gap: 0;
+		}
+	}
+
+	&__date-item {
+	}
+}
+
+
+.history {
+
+	&__school {
+		@include adaptiveValue("padding-top", 50, 25, $containerWidth, $minWidth, 1);
+		@include adaptiveValue("padding-bottom", 80, 40, $containerWidth, $minWidth, 1);
+		display: flex;
+		@include adaptiveValue("gap", 40, 20, $containerWidth, $minWidth, 1);
+		justify-content: space-between;
+		@media(max-width: 750px) {
+			flex-direction: column;
+		}
+		&.kvant {
+			align-items: flex-end;
+			justify-content: flex-start;
+		}
+	}
+
+	&__left {
+		flex: 0 1 910px;
+		h3 {
+			@include adaptiveValue("margin-top", 30, 15, $containerWidth, $minWidth, 1);
+			@include adaptiveValue("margin-bottom", 40, 20, $containerWidth, $minWidth, 1);
+			&.t {
+				@include adaptiveValue("margin-top", 60, 30, $containerWidth, $minWidth, 1);
+			}
+		}
+		span {
+			display: block;
+			@include adaptiveValue("margin-bottom", 12, 5, $containerWidth, $minWidth, 1);
+		}
+		p {
+			@include adaptiveValue("margin-bottom", 30, 15, $containerWidth, $minWidth, 1);
+		}
+		&.kvant {
+			flex: 0 1 1100px;
+			@media(max-width: 750px) {
+				flex: 1 1 auto;
+			}
+		}
+		@media(max-width: 750px) {
+			flex: 1 1 auto;
+		}
+	}
+
+	&__right {
+		flex: 0 1 800px;
+		position: relative;
+		img {
+			max-width: 100%;
+			height: auto;
+			overflow: auto;
+			&:nth-child(1) {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			&:nth-child(2) {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+			}
+			@media(max-width: 750px) {
+				position: relative!important;
+			}
+		}
+		@media(max-width: 750px) {
+			flex: 1 1 auto;
+			display: flex;
+			gap: 30px;
+		}
+		&.kvant {
+			display: flex;
+			flex-direction: column;
+			flex: 0 1 auto;
+			@include adaptiveValue("gap", 80, 30, $containerWidth, $minWidth, 1);
+			img {
+				position: relative;
+			}
+			@media(max-width: 750px) {
+				flex-direction: row;
+			}
+		}
+	}
+}

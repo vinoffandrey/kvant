@@ -1,0 +1,88 @@
+.partnerspage {
+
+	&__page {
+	}
+
+	&__body {
+		display: grid;
+		grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+		@include adaptiveValue("gap", 30, 15, $containerWidth, $minWidth, 1);
+		@media(max-width: 1000px) {
+			grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		border-radius: 10px;
+		border: 2px solid var(--unnamed, #A7DCEB);
+		@include adaptiveValue("padding", 30, 15, $containerWidth, $minWidth, 1);
+	}
+
+	&__item-image {
+		flex: 0 1 auto;
+		width: 100%;
+		@include adaptiveValue("height", 250, 150, $containerWidth, $minWidth, 1);
+		img {
+			height: 100%;
+		}
+	}
+
+	&__item-title {
+		flex: 0 1 auto;
+		text-align: left;
+		width: 100%;
+		@include adaptiveValue("margin-top", 32, 16, $containerWidth, $minWidth, 1);
+		@include adaptiveValue("margin-bottom", 12, 8, $containerWidth, $minWidth, 1);
+	}
+
+	&__item-text {
+		width: 100%;
+		flex: 1 1 auto;
+		text-align: left;
+		position: relative;
+		div {
+			position: absolute;
+			width: 100%;
+			top: 0;
+			left: 0;
+			background-color: #fff;
+			z-index: 1;
+			padding-bottom: 40px;
+			border-radius: 10px;
+			margin-left: -15px;
+			margin-right: -15px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+
+	&__item-about {
+		width: 100%;
+		text-align: left;
+		@include adaptiveValue("margin-top", 12, 8, $containerWidth, $minWidth, 1);
+		p {
+			text-decoration: underline;
+			display: inline-block;
+			cursor: pointer;
+		}
+	}
+
+	&__item-back {
+		width: 100%;
+		text-align: left;
+		bottom: 0;
+		top: auto!important;
+		@include adaptiveValue("margin-top", 12, 8, $containerWidth, $minWidth, 1);
+		text-decoration: underline;
+		cursor: pointer;
+		padding-bottom: 10px!important;
+		margin-left: 0!important;
+		p {
+			text-decoration: underline;
+			display: inline-block;
+			cursor: pointer;
+		}
+	}
+}

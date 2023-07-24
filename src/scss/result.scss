@@ -1,0 +1,9 @@
+.result__month-right {
+	flex: 0 1 670px!important;
+	.games__month-x {
+		min-width: 95px;
+	}
+	@media (max-width: 650px) {
+		flex: 1 1 auto!important;
+	}
+}

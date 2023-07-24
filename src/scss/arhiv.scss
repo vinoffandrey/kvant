@@ -1,0 +1,41 @@
+.arhive {
+
+	&__page {
+	}
+
+	&__text {
+	}
+
+	&__body {
+		@include adaptiveValue("margin-top", 20, 15, $containerWidth, $minWidth, 1);
+		display: grid;
+		grid-template-columns: repeat(auto-fit,minmax(450px,590px));
+		@include adaptiveValue("gap", 30, 15, $containerWidth, $minWidth, 1);
+		@media(max-width: 650px) {
+			grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+		}
+	}
+
+	&__item {
+		border-radius: 10px;
+		border: 4px solid var(--unnamed, #A7DCEB);
+		@include adaptiveValue("padding", 40, 15, $containerWidth, $minWidth, 1);
+	}
+
+	&__text {
+	}
+
+	&__detail {
+		@include adaptiveValue("margin-top", 45, 20, $containerWidth, $minWidth, 1);
+		display: flex;
+		justify-content: space-between;
+		a {
+			text-decoration: underline;
+			transition: all .3s ease 0s;
+			&:hover, &:active, &:focus {
+				color: var(--unnamed, #891342);
+			}
+		}
+	}
+}
+

@@ -1,0 +1,100 @@
+
+.news {
+
+	&__page {
+	}
+
+	&__title {
+	}
+
+	&page__body {
+		display: grid;
+		grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+		@include adaptiveValue("gap", 30, 15, $containerWidth, $minWidth, 1);
+		@include adaptiveValue("margin-top", 40, 20, $containerWidth, $minWidth, 1);
+		@include adaptiveValue("margin-bottom", 80, 40, $containerWidth, $minWidth, 1);
+		@media(max-width: 800px) {
+			grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+		}
+	}
+
+	&__body-item {
+	}
+
+	&__body-image {
+		@include adaptiveValue("height", 350, 250, $containerWidth, $minWidth, 1);
+		display: block;
+		border-radius: 10px;
+		img {
+			border-radius: 10px;
+		}
+	}
+
+	&__body-title {
+		@include adaptiveValue("margin-top", 20, 10, $containerWidth, $minWidth, 1);
+		padding-right: 20px;
+	}
+
+	&__body-date {
+		@include adaptiveValue("margin-top", 20, 10, $containerWidth, $minWidth, 1);
+		@include adaptiveValue("margin-bottom", 20, 10, $containerWidth, $minWidth, 1);
+	}
+
+	&__body-link {
+		text-decoration: underline!important;
+	}
+
+	&__gallery {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		@include adaptiveValue("margin-top", 40, 20, $containerWidth, $minWidth, 1);
+		@media(max-width: 1200px) {
+			gap: 20px;
+		}
+		@media(max-width: 800px) {
+			gap: 10px;
+		}
+	}
+
+	&__gallery-item {
+		flex: 0 1 calc(25% - 23px);
+		@include adaptiveValue("height", 437, 200, $containerWidth, 900, 1);
+		border-radius: 10px;
+		img {
+			border-radius: 10px;
+		}
+		@media(max-width: 1200px) {
+			flex: 0 1 calc(25% - 15px);
+		}
+		@media(max-width: 800px) {
+			flex: 0 1 calc(33.333% - 7px);
+		}
+		@media(max-width: 500px) {
+			flex: 0 1 calc(50% - 5px);
+			height: 170px;
+		}
+	}
+
+	&__video {
+		@include adaptiveValue("margin-top", 30, 15, $containerWidth, $minWidth, 1);
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+		@media(max-width: 1200px) {
+			gap: 20px;
+		}
+		@media(max-width: 800px) {
+			gap: 10px;
+		}
+		video {
+			max-width: 100%;
+			height: auto;
+			overflow: auto;
+			border-radius: 10px;
+		}
+		@media(max-width: 600px) {
+			flex-direction: column;
+		}
+	}
+}

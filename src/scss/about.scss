@@ -1,0 +1,132 @@
+.about {
+
+	&__page-body {
+		text-transform: none!important;
+		img {
+			max-width: 100%;
+			height: auto;
+			border-radius: 10px;
+			overflow: auto;
+		}
+		span {
+			text-transform: uppercase!important;
+			@include adaptiveValue("margin-bottom", 30, 15, $containerWidth, $minWidth, 1);
+			display: block;
+			&.st {
+				margin-bottom: 0;
+				text-transform: none!important;
+			}
+		}
+		p {
+			@include adaptiveValue("margin-bottom", 30, 15, $containerWidth, $minWidth, 1);
+		}
+		ul {
+			@include adaptiveValue("margin-bottom", 30, 15, $containerWidth, $minWidth, 1);
+			padding-left: 25px;
+			li {
+				list-style:disc;
+
+			}
+		}
+	}
+
+	&__page-top {
+		display: flex;
+		@include adaptiveValue("gap", 30, 10, $containerWidth, $minWidth, 1);
+		@media(max-width: 1000px) {
+			flex-direction: column;
+		}
+	}
+
+	&__top-left {
+		flex: 0 1 720px;
+		@media(max-width: 1000px) {
+			flex: 1 1 auto;
+		}
+	}
+
+	&__top-right {
+		display: flex;
+		@include adaptiveValue("gap", 30, 10, $containerWidth, $minWidth, 1);
+		flex: 0 1 auto;
+	}
+
+	&__page-center {
+		@include adaptiveValue("margin-top", 80, 30, $containerWidth, $minWidth, 1);
+	}
+
+	&__center-body {
+		display: flex;
+		@include adaptiveValue("gap", 30, 10, $containerWidth, $minWidth, 1);
+		@include adaptiveValue("margin-bottom", 80, 30, $containerWidth, $minWidth, 1);
+		@media(max-width: 1000px) {
+			flex-direction: column;
+		}
+	}
+
+	&__center-left {
+		flex: 0 1 50%;
+		@media(max-width: 1000px) {
+			flex: 1 1 auto;
+		}
+	}
+
+	&__center-right {
+		flex: 0 1 50%;
+		@media(max-width: 1000px) {
+			flex: 1 1 auto;
+		}
+		&.gallery {
+			display: flex;
+			flex-wrap: wrap;
+			@include adaptiveValue("gap", 30, 10, $containerWidth, $minWidth, 1);
+			img {
+				flex: 0 1 calc(50% - 15px);
+				@media(max-width: 1000px) {
+					flex: 0 1 calc(50% - 12px);
+				}
+				@media(max-width: 500px) {
+					flex: 0 1 calc(50% - 8px);
+				}
+			}
+		}
+	}
+
+	&__page-bottom {
+		display: flex;
+		justify-content: space-between;
+		@include adaptiveValue("gap", 30, 10, $containerWidth, $minWidth, 1);
+		@media(max-width: 1000px) {
+			flex-direction: column;
+		}
+	}
+
+	&__bottom-left {
+		flex: 0 1 500px;
+		display: flex;
+		flex-direction: column;
+		@include adaptiveValue("gap", 30, 10, $containerWidth, $minWidth, 1);
+		@media(max-width: 1000px) {
+			flex: 1 1 100%;
+			flex-direction: row;
+		}
+	}
+
+	&__bottom-center {
+		flex: 0 1 720px;
+		@media(max-width: 1000px) {
+			flex: 1 1 100%;
+		}
+	}
+
+	&__bottom-right {
+		flex: 0 1 500px;
+		display: flex;
+		flex-direction: column;
+		@include adaptiveValue("gap", 30, 10, $containerWidth, $minWidth, 1);
+		@media(max-width: 1000px) {
+			flex: 1 1 100%;
+			flex-direction: row;
+		}
+	}
+}

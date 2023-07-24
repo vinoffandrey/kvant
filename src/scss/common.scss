@@ -1,0 +1,111 @@
+// Заголовки, общие БЄМ блоки
+.body {
+	@include adaptiveValue("margin-top", 80, 30, $containerWidth, $minWidth, 1);
+}
+.section {
+	@include adaptiveValue("padding-top", 180, 50, $containerWidth, $minWidth, 1);
+	@include adaptiveValue("padding-bottom", 180, 50, $containerWidth, $minWidth, 1);
+}
+h1 {
+	@include adaptiveValue("font-size", 56, 18, $containerWidth, $minWidth, 1);
+	font-weight: 400;
+	line-height: normal;
+	font-family: 'Russo';
+	color: var(--unnamed, #390000);
+}
+.title-56 {
+	@include adaptiveValue("font-size", 56, 18, $containerWidth, $minWidth, 1);
+	font-weight: 400;
+	line-height: normal;
+	font-family: 'Russo';
+	color: var(--unnamed, #390000);
+}
+h2 {
+	@include adaptiveValue("font-size", 48, 16, $containerWidth, $minWidth, 1);
+	font-weight: 400;
+	line-height: 130%;
+	font-family: 'Russo';
+	color: var(--unnamed, #390000);
+}
+h3 {
+	@include adaptiveValue("font-size", 32, 16, $containerWidth, $minWidth, 1);
+	font-weight: 800;
+	line-height: 130%;
+	color: var(--unnamed, #390000);
+}
+h4 {
+	@include adaptiveValue("font-size", 28, 16, $containerWidth, $minWidth, 1);
+	font-weight: 800;
+	line-height: 130%;
+	color: var(--unnamed, #390000);
+}
+.text-20 {
+	@include adaptiveValue("font-size", 20, 14, $containerWidth, $minWidth, 1);
+	line-height: 130%;
+	color: var(--unnamed, #390000);
+	font-weight: 400;
+	&.bold {
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&.black {
+		font-weight: 900;
+		text-transform: uppercase;
+	}
+}
+.text-16 {
+	@include adaptiveValue("font-size", 16, 12, $containerWidth, $minWidth, 1);
+	line-height: 130%;
+	color: var(--unnamed, #390000);
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.text-24 {
+	@include adaptiveValue("font-size", 24, 16, $containerWidth, $minWidth, 1);
+	line-height: 130%;
+	color: var(--unnamed, #390000);
+	font-weight: 400;
+	text-decoration: underline!important;
+}
+//========================================================================================================================================================
+.slider__arrows {
+	display: flex;
+		gap: 30px;
+		justify-content: center;
+		@include adaptiveValue("margin-top", 30, 15, $containerWidth, $minWidth, 1);
+}
+.slider__arrow {
+	background-image: url('../img/icons/arrow.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	@include adaptiveValue("width", 40, 20, $containerWidth, $minWidth, 1);
+	@include adaptiveValue("height", 60, 30, $containerWidth, $minWidth, 1);
+	transition: all .3s ease 0s;
+	cursor: pointer;
+	&:hover, &:active, &:focus {
+		background-image: url('../img/icons/arrow-hover.svg');
+	}
+}
+.arrow-next {
+	transform: rotate(180deg);
+}
+.swiper-button-disabled {
+	opacity: .5;
+}
+
+
+.content {
+	@include adaptiveValue("padding-top", 80, 40, $containerWidth, $minWidth, 1);
+	@include adaptiveValue("padding-bottom", 120, 40, $containerWidth, $minWidth, 1);
+}
+.title {
+	background-color: var(--unnamed, #891342);
+	@include adaptiveValue("padding-top", 80, 30, $containerWidth, $minWidth, 1);
+	@include adaptiveValue("padding-bottom", 80, 30, $containerWidth, $minWidth, 1);
+	@include adaptiveValue("padding-left", 40, 20, $containerWidth, $minWidth, 1);
+	@include adaptiveValue("padding-right", 40, 20, $containerWidth, $minWidth, 1);
+	h2 {
+		color: var(--unnamed, #FFF);
+	}
+}

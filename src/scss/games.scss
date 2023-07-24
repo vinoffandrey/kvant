@@ -1,0 +1,109 @@
+.games {
+
+	&__page {
+		max-width: 1465px;
+	}
+
+	&__navigation {
+		display: flex;
+		@include adaptiveValue("gap", 60, 40, $containerWidth, $minWidth, 1);
+		a {
+			transition: all .3s ease 0s;
+			&:hover, &:active, &:focus {
+				color: var(--unnamed, #891342);
+			}
+		}
+	}
+
+	&__body {
+		@include adaptiveValue("margin-top", 40, 30, $containerWidth, $minWidth, 1);
+	}
+
+	&__month {
+	}
+
+	&__month-title {
+	}
+
+	&__month-body {
+		@include adaptiveValue("margin-top", 40, 30, $containerWidth, $minWidth, 1);
+		@include adaptiveValue("margin-bottom", 80, 40, $containerWidth, $minWidth, 1);
+	}
+
+	&__month-item {
+		border-bottom: 2px solid var(--unnamed, #891342);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@include adaptiveValue("padding-bottom", 30, 15, $containerWidth, $minWidth, 1);
+		@include adaptiveValue("margin-top", 30, 15, $containerWidth, $minWidth, 1);
+		@media(max-width: 650px) {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 30px;
+		}
+	}
+
+	&__month-left {
+		flex: 0 1 550px;
+		display: flex;
+		@include adaptiveValue("gap", 60, 15, $containerWidth, 1200, 1);
+		min-width: 320px;
+		@media(max-width: 650px) {
+			flex: 1 1 auto;
+			width: 100%;
+			justify-content: space-between;
+		}
+	}
+
+	&__month-date {
+		p {
+			text-transform: uppercase;
+			@include adaptiveValue("margin-top", 8, 5, $containerWidth, $minWidth, 1);
+		}
+	}
+
+	&__month-right {
+		display: flex;
+		justify-content: space-between;
+		@include adaptiveValue("gap", 30, 15, $containerWidth, $minWidth, 1);
+		flex: 0 1 660px;
+		align-items: center;
+		@media(max-width: 650px) {
+			flex: 1 1 auto;
+			width: 100%;
+		}
+	}
+
+	&__month-command {
+		text-align: center;
+		flex: 0 1 240px;
+		p {
+			margin-top: 5px;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+			@media(max-width: 650px) {
+				max-width: 70px;
+			}
+		}
+	}
+
+	&__month-x {
+		flex: 1 1 auto;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__more {
+		display: flex;
+		justify-content: center;
+		a {
+			transition: all .3s ease 0s;
+			&:hover, &:active, &:focus {
+				color: var(--unnamed, #891342);
+			}
+		}
+	}
+}

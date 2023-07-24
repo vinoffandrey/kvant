@@ -1,0 +1,21 @@
+.tv {
+
+	&__page {
+	}
+
+	&__body {
+	}
+
+	&__text {
+		max-width: 1100px;
+	}
+
+	&__video {
+		@include adaptiveValue("margin-top", 40, 20, $containerWidth, $minWidth, 1);
+		max-width: 1450px;
+		video {
+			width: 100%;
+			height: auto;
+		}
+	}
+}

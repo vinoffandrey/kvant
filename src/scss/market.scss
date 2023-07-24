@@ -1,0 +1,43 @@
+.market {
+
+	&__text {
+		border-radius: 10px;
+		background-color: var(--unnamed, #E9F9FF);
+		max-width: 900px;
+		@include adaptiveValue("padding", 40, 20, $containerWidth, $minWidth, 1);
+		a {
+			text-decoration: underline;
+		}
+	}
+
+	&__body {
+		display: grid;
+		grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+		@include adaptiveValue("gap", 30, 15, $containerWidth, $minWidth, 1);
+		@include adaptiveValue("margin-top", 40, 20, $containerWidth, $minWidth, 1);
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__item-image {
+		flex: 0 1 auto;
+		border-radius: 10px;
+		@include adaptiveValue("height", 344, 250, $containerWidth, $minWidth, 1);
+		img {
+			border-radius: 10px;
+		}
+	}
+
+	&__item-title {
+		flex: 1 1 auto;
+		@include adaptiveValue("margin-top", 24, 12, $containerWidth, $minWidth, 1);
+		@include adaptiveValue("margin-bottom", 12, 8, $containerWidth, $minWidth, 1);
+	}
+
+	&__item-cost {
+		flex: 0 1 auto;
+	}
+}
