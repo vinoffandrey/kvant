@@ -2002,6 +2002,12 @@ h4 {
     height: 300px;
   }
 }
+@media (max-width: 450px) {
+  .main__left {
+    flex: 1 1 190px;
+    height: 190px;
+  }
+}
 .main__left-body {
   border-radius: 10px;
   height: 100%;
