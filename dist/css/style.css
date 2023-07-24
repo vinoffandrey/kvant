@@ -1999,6 +1999,7 @@ h4 {
   .main__left {
     flex: 1 1 300px;
     margin-bottom: 30px;
+    height: 300px;
   }
 }
 .main__left-body {
