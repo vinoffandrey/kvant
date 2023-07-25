@@ -42,8 +42,17 @@
 		border-radius: 10px;
 		background-color: var(--unnamed, #A7DCEB);
 		@include adaptiveValue("padding", 20, 10, $containerWidth, $minWidth, 1);
+		display: flex;
+		flex-direction: column;
 		h4 {
+			flex: 0 1 auto;
 			@include adaptiveValue("margin-bottom", 12, 6, $containerWidth, $minWidth, 1);
+		}
+		span {
+			flex: 1 1 auto;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
 		}
 	}
 }

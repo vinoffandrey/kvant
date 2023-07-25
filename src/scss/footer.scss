@@ -105,6 +105,10 @@
 			background-repeat: no-repeat;
 			background-position: center;
 			transition: all .3s ease 0s;
+			fill: #fff;
+			&:hover, &:active, &:focus {
+				fill: var(--unnamed, #A7DCEB);
+			}
 		}
 	}
 
@@ -145,20 +149,11 @@
 }
 
 .footer-vk {
-	background-image: url('../img/footer/vk.svg');
-	&:hover, &:active, &:focus {
-		background-image: url('../img/footer/vk-hover.svg');
-	}
+
 }
 .footer-tg {
-	background-image: url('../img/footer/tg.svg');
-	&:hover, &:active, &:focus {
-		background-image: url('../img/footer/tg-hover.svg');
-	}
+
 }
 .footer-youtube {
-	background-image: url('../img/footer/youtube.svg');
-	&:hover, &:active, &:focus {
-		background-image: url('../img/footer/youtube-hover.svg');
-	}
+
 }

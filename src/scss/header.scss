@@ -165,6 +165,10 @@
 			background-repeat: no-repeat;
 			background-position: center;
 			transition: all .3s ease 0s;
+			fill: #454545;
+			&:hover, &:active, &:focus {
+				fill: var(--unnamed, #891342);
+			}
 		}
 }
 .-ibg {
@@ -186,11 +190,6 @@
 			gap: 15px;
 			li {
 				position: relative;
-				&:hover, &:active, &:focus {
-					.submenu {
-						display: flex;
-					}
-				}
 			}
 		}
 
@@ -198,12 +197,14 @@
 			transition: all .3s ease 0s;
 			cursor: pointer;
 			&:hover, &:active, &:focus {
+				text-shadow: 1px 0 #891342;
 				color: var(--unnamed, #891342);
 			}
 			&.drop {
 				display: flex;
 				align-items: center;
 				@include adaptiveValue("gap", 8, 4, $containerWidth, $minWidth, 1);
+				transition: all .3s ease 0s;
 				&:after {
 					content: "";
 					display: inline-block;
@@ -216,8 +217,11 @@
 					transition: all .3s ease 0s;
 				}
 				&:hover, &:active, &:focus {
-					font-weight: 700;
+					text-shadow: 1px 0 #891342;
 					color: var(--unnamed, #891342);
+					
+				}
+				&._spoller-active {
 					&:after {
 						background-image: url('../img/header/down-hover.svg');
 						transform: rotate(180deg);
@@ -231,7 +235,6 @@
 		@include adaptiveValue("padding", 30, 10, $containerWidth, $minWidth, 1);
 		border-radius: 10px;
 		background-color: #FFF;
-		display: none;
 		z-index: 201;
 		position: absolute;
 		top: 100%;
@@ -241,34 +244,21 @@
 
 		&__link {
 			width: max-content;
+			transition: all .3s ease 0s;
 			&:hover, &:active, &:focus {
 				color: var(--unnamed, #891342);
 			}
 		}
 }
 .vk {
-	background-image: url('../img/header/vk.svg');
-	&:hover, &:active, &:focus {
-		background-image: url('../img/header/vk-hover.svg');
-	}
+
 }
 .tg {
-	background-image: url('../img/header/tg.svg');
-	&:hover, &:active, &:focus {
-		background-image: url('../img/header/tg-hover.svg');
-	}
+
 }
 .youtube {
-	background-image: url('../img/header/youtube.svg');
-	&:hover, &:active, &:focus {
-		background-image: url('../img/header/youtube-hover.svg');
-	}
+
 }
-.submenu:hover ~ .menu__link.drop {
-	font-weight: 700;
-	color: var(--unnamed, #891342);
-	&:after {
-		background-image: url('../img/header/down-hover.svg');
-		transform: rotate(180deg);
-	}
+.menu__link.drop._spoller-active ~ .submenu {
+	display: flex;
 }

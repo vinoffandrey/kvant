@@ -6,8 +6,8 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.css?_v=20230724141348" integrity="sha512-xdNgqS9I7CHbzFYjDiySh1lV5Sc4sobLLAvHLqtZY6ynlCiWpl+eGPds9CAMFFst5QgZRgd92qfeg03sl3UCjA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20230724141348">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.css?_v=20230725130318" integrity="sha512-xdNgqS9I7CHbzFYjDiySh1lV5Sc4sobLLAvHLqtZY6ynlCiWpl+eGPds9CAMFFst5QgZRgd92qfeg03sl3UCjA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230725130318">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,22 +37,23 @@
 						</div>
 						<nav class="menu__body">
 							<ul class="menu__list">
-								<li>
+								<li data-spollers>
+									<span class="menu__link drop text-20" data-spoller>Клуб</span>
 									<div class="submenu">
 										<a href="about.html" class="submenu__link text-20">О клубе</a>
 										<a href="history.html" class="submenu__link text-20">История турниров</a>
 										<a href="rukovodstvo.html" class="submenu__link text-20">Руководство</a>
 									</div>
-									<span class="menu__link drop text-20">Клуб</span>
 								</li>
-								<li>
+								<li data-spollers>
+									<span class="menu__link drop text-20" data-spoller>Команды</span>
 									<div class="submenu">
 										<a href="kvant.html" class="submenu__link text-20">КВАНТ</a>
 										<a href="trener.html" class="submenu__link text-20">Тренерский состав</a>
 									</div>
-									<span class="menu__link drop text-20">Команды</span>
 								</li>
-								<li>
+								<li data-spollers>
+									<span class="menu__link drop text-20" data-spoller>Болельщику</span>
 									<div class="submenu">
 										<a href="games.html" class="submenu__link text-20">Расписание игр</a>
 										<a href="arhiv.html" class="submenu__link text-20">Архив матчей</a>
@@ -60,7 +61,6 @@
 										<a href="market.html" class="submenu__link text-20">КВАНТ-маркет</a>
 										<a href="documents.html" class="submenu__link text-20">Документы</a>
 									</div>
-									<span class="menu__link drop text-20">Болельщику</span>
 								</li>
 								<li>
 									<a href="partners.html" class="menu__link text-20">Партнеры</a>
@@ -76,16 +76,74 @@
 								</li>
 							</ul>
 							<div class="header__social mobile">
-								<a href="#" class="header__social-item vk"></a>
-								<a href="#" class="header__social-item tg"></a>
-								<a href="#" class="header__social-item youtube"></a>
+								<a href="#" class="header__social-item vk">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+										<g clip-path="url(#clip0_193_23788)">
+											<path d="M0 24C0 12.6862 0 7.02944 3.51472 3.51472C7.02944 0 12.6862 0 24 0H26C37.3137 0 42.9705 0 46.4853 3.51472C50 7.02944 50 12.6862 50 24V26C50 37.3137 50 42.9705 46.4853 46.4853C42.9705 50 37.3137 50 26 50H24C12.6862 50 7.02944 50 3.51472 46.4853C0 42.9705 0 37.3137 0 26V24Z" />
+											<path d="M26.5183 36C14.9018 36 8.27608 28.1171 8 15H13.8189C14.01 24.6276 18.2997 28.7057 21.6976 29.5465V15H27.1769V23.3033C30.5323 22.9459 34.0571 19.1622 35.2464 15H40.7256C39.8124 20.1291 35.9898 23.9129 33.2715 25.4685C35.9898 26.7297 40.3435 30.03 42 36H35.9686C34.6731 32.006 31.4455 28.9159 27.1769 28.4955V36H26.5183Z" fill="white" />
+										</g>
+										<defs>
+											<clipPath id="clip0_193_23788">
+												<rect width="50" height="50" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+								<a href="#" class="header__social-item tg">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+										<g clip-path="url(#clip0_193_23801)">
+											<path d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M11.3164 24.7361C18.6045 21.5608 23.4643 19.4675 25.8959 18.4561C32.8386 15.5684 34.2813 15.0667 35.2216 15.0502C35.4284 15.0465 35.8908 15.0978 36.1903 15.3408C36.4433 15.5461 36.5128 15.8233 36.5462 16.0179C36.5794 16.2124 36.6209 16.6557 36.588 17.002C36.2117 20.9551 34.5838 30.5482 33.7556 34.9757C33.4051 36.8492 32.7151 37.4773 32.0471 37.5388C30.5953 37.6724 29.4928 36.5794 28.0867 35.6576C25.8864 34.2153 24.6433 33.3174 22.5075 31.91C20.0392 30.2834 21.6393 29.3894 23.046 27.9284C23.4141 27.5461 29.8108 21.7278 29.9346 21.2C29.9501 21.134 29.9644 20.8879 29.8183 20.758C29.6721 20.6281 29.4563 20.6725 29.3006 20.7078C29.08 20.7579 25.5649 23.0813 18.7555 27.6778C17.7578 28.3629 16.854 28.6967 16.0443 28.6792C15.1517 28.6599 13.4347 28.1745 12.1582 27.7596C10.5926 27.2507 9.34825 26.9816 9.4566 26.1173C9.51304 25.6671 10.133 25.2067 11.3164 24.7361Z" fill="white" />
+										</g>
+										<defs>
+											<clipPath id="clip0_193_23801">
+												<rect width="50" height="50" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+								<a href="#" class="header__social-item youtube">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+										<path d="M20 32.2891V17.7109L33 25L20 32.2891Z" fill="white" />
+										<path d="M48.9451 13.3082C48.6606 12.2813 48.1035 11.345 47.3294 10.5931C46.5554 9.84113 45.5917 9.29987 44.5347 9.02347C40.642 8 25 8 25 8C25 8 9.35798 8 5.46534 9.02347C4.40832 9.29987 3.44457 9.84113 2.67055 10.5931C1.89652 11.345 1.33937 12.2813 1.05486 13.3082C0.328014 17.1649 -0.0247031 21.0793 0.00134356 25C-0.0247031 28.9207 0.328014 32.8352 1.05486 36.6918C1.33937 37.7187 1.89652 38.655 2.67055 39.4069C3.44457 40.1589 4.40832 40.7001 5.46534 40.9765C9.35798 42 25 42 25 42C25 42 40.642 42 44.5347 40.9765C45.5917 40.7001 46.5554 40.1589 47.3294 39.4069C48.1035 38.655 48.6606 37.7187 48.9451 36.6918C49.672 32.8352 50.0247 28.9207 49.9987 25C50.0247 21.0793 49.672 17.1649 48.9451 13.3082ZM20.0003 32.2857V17.7143L32.9817 25L20.0003 32.2857Z" />
+									</svg>
+								</a>
 							</div>
 						</nav>
 					</div>
 					<div class="header__social desktop">
-						<a href="#" class="header__social-item vk"></a>
-						<a href="#" class="header__social-item tg"></a>
-						<a href="#" class="header__social-item youtube"></a>
+						<a href="#" class="header__social-item vk">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+								<g clip-path="url(#clip0_193_23788)">
+									<path d="M0 24C0 12.6862 0 7.02944 3.51472 3.51472C7.02944 0 12.6862 0 24 0H26C37.3137 0 42.9705 0 46.4853 3.51472C50 7.02944 50 12.6862 50 24V26C50 37.3137 50 42.9705 46.4853 46.4853C42.9705 50 37.3137 50 26 50H24C12.6862 50 7.02944 50 3.51472 46.4853C0 42.9705 0 37.3137 0 26V24Z" />
+									<path d="M26.5183 36C14.9018 36 8.27608 28.1171 8 15H13.8189C14.01 24.6276 18.2997 28.7057 21.6976 29.5465V15H27.1769V23.3033C30.5323 22.9459 34.0571 19.1622 35.2464 15H40.7256C39.8124 20.1291 35.9898 23.9129 33.2715 25.4685C35.9898 26.7297 40.3435 30.03 42 36H35.9686C34.6731 32.006 31.4455 28.9159 27.1769 28.4955V36H26.5183Z" fill="white" />
+								</g>
+								<defs>
+									<clipPath id="clip0_193_23788">
+										<rect width="50" height="50" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+						<a href="#" class="header__social-item tg">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+								<g clip-path="url(#clip0_193_23801)">
+									<path d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z" />
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M11.3164 24.7361C18.6045 21.5608 23.4643 19.4675 25.8959 18.4561C32.8386 15.5684 34.2813 15.0667 35.2216 15.0502C35.4284 15.0465 35.8908 15.0978 36.1903 15.3408C36.4433 15.5461 36.5128 15.8233 36.5462 16.0179C36.5794 16.2124 36.6209 16.6557 36.588 17.002C36.2117 20.9551 34.5838 30.5482 33.7556 34.9757C33.4051 36.8492 32.7151 37.4773 32.0471 37.5388C30.5953 37.6724 29.4928 36.5794 28.0867 35.6576C25.8864 34.2153 24.6433 33.3174 22.5075 31.91C20.0392 30.2834 21.6393 29.3894 23.046 27.9284C23.4141 27.5461 29.8108 21.7278 29.9346 21.2C29.9501 21.134 29.9644 20.8879 29.8183 20.758C29.6721 20.6281 29.4563 20.6725 29.3006 20.7078C29.08 20.7579 25.5649 23.0813 18.7555 27.6778C17.7578 28.3629 16.854 28.6967 16.0443 28.6792C15.1517 28.6599 13.4347 28.1745 12.1582 27.7596C10.5926 27.2507 9.34825 26.9816 9.4566 26.1173C9.51304 25.6671 10.133 25.2067 11.3164 24.7361Z" fill="white" />
+								</g>
+								<defs>
+									<clipPath id="clip0_193_23801">
+										<rect width="50" height="50" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+						<a href="#" class="header__social-item youtube">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+								<path d="M20 32.2891V17.7109L33 25L20 32.2891Z" fill="white" />
+								<path d="M48.9451 13.3082C48.6606 12.2813 48.1035 11.345 47.3294 10.5931C46.5554 9.84113 45.5917 9.29987 44.5347 9.02347C40.642 8 25 8 25 8C25 8 9.35798 8 5.46534 9.02347C4.40832 9.29987 3.44457 9.84113 2.67055 10.5931C1.89652 11.345 1.33937 12.2813 1.05486 13.3082C0.328014 17.1649 -0.0247031 21.0793 0.00134356 25C-0.0247031 28.9207 0.328014 32.8352 1.05486 36.6918C1.33937 37.7187 1.89652 38.655 2.67055 39.4069C3.44457 40.1589 4.40832 40.7001 5.46534 40.9765C9.35798 42 25 42 25 42C25 42 40.642 42 44.5347 40.9765C45.5917 40.7001 46.5554 40.1589 47.3294 39.4069C48.1035 38.655 48.6606 37.7187 48.9451 36.6918C49.672 32.8352 50.0247 28.9207 49.9987 25C50.0247 21.0793 49.672 17.1649 48.9451 13.3082ZM20.0003 32.2857V17.7143L32.9817 25L20.0003 32.2857Z" />
+							</svg>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -100,7 +158,7 @@
 				</div>
 				<h3>Вратари</h3>
 				<ul class="kvant__body">
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/1.webp" type="image/webp"><img src="img/kvant/1.png" alt=""></picture>
 						</div>
@@ -114,7 +172,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/2.webp" type="image/webp"><img src="img/kvant/2.png" alt=""></picture>
 						</div>
@@ -131,7 +189,7 @@
 				</ul>
 				<h3>Защитники</h3>
 				<ul class="kvant__body">
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/3.webp" type="image/webp"><img src="img/kvant/3.png" alt=""></picture>
 						</div>
@@ -145,7 +203,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/4.webp" type="image/webp"><img src="img/kvant/4.png" alt=""></picture>
 						</div>
@@ -159,7 +217,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/5.webp" type="image/webp"><img src="img/kvant/5.png" alt=""></picture>
 						</div>
@@ -173,7 +231,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/6.webp" type="image/webp"><img src="img/kvant/6.png" alt=""></picture>
 						</div>
@@ -187,7 +245,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/7.webp" type="image/webp"><img src="img/kvant/7.png" alt=""></picture>
 						</div>
@@ -201,7 +259,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/8.webp" type="image/webp"><img src="img/kvant/8.png" alt=""></picture>
 						</div>
@@ -215,7 +273,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/9.webp" type="image/webp"><img src="img/kvant/9.png" alt=""></picture>
 						</div>
@@ -229,7 +287,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/10.webp" type="image/webp"><img src="img/kvant/10.png" alt=""></picture>
 						</div>
@@ -243,7 +301,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/11.webp" type="image/webp"><img src="img/kvant/11.png" alt=""></picture>
 						</div>
@@ -257,7 +315,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/12.webp" type="image/webp"><img src="img/kvant/12.png" alt=""></picture>
 						</div>
@@ -271,7 +329,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/13.webp" type="image/webp"><img src="img/kvant/13.png" alt=""></picture>
 						</div>
@@ -288,7 +346,7 @@
 				</ul>
 				<h3>Полузащитники</h3>
 				<ul class="kvant__body">
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/14.webp" type="image/webp"><img src="img/kvant/14.png" alt=""></picture>
 						</div>
@@ -302,7 +360,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/15.webp" type="image/webp"><img src="img/kvant/15.png" alt=""></picture>
 						</div>
@@ -316,7 +374,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/16.webp" type="image/webp"><img src="img/kvant/16.png" alt=""></picture>
 						</div>
@@ -330,7 +388,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/17.webp" type="image/webp"><img src="img/kvant/17.png" alt=""></picture>
 						</div>
@@ -344,7 +402,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/18.webp" type="image/webp"><img src="img/kvant/18.png" alt=""></picture>
 						</div>
@@ -358,7 +416,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/19.webp" type="image/webp"><img src="img/kvant/19.png" alt=""></picture>
 						</div>
@@ -372,7 +430,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/20.webp" type="image/webp"><img src="img/kvant/20.png" alt=""></picture>
 						</div>
@@ -389,7 +447,7 @@
 				</ul>
 				<h3>Нападающие</h3>
 				<ul class="kvant__body">
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/21.webp" type="image/webp"><img src="img/kvant/21.png" alt=""></picture>
 						</div>
@@ -403,7 +461,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/22.webp" type="image/webp"><img src="img/kvant/22.png" alt=""></picture>
 						</div>
@@ -417,7 +475,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/23.webp" type="image/webp"><img src="img/kvant/23.png" alt=""></picture>
 						</div>
@@ -431,7 +489,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/24.webp" type="image/webp"><img src="img/kvant/24.png" alt=""></picture>
 						</div>
@@ -445,7 +503,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="kvant__item players__item">
+					<li class="kvant__item players__item" data-popup="#popup__players-1">
 						<div class="players__image -ibg">
 							<picture><source srcset="img/kvant/25.webp" type="image/webp"><img src="img/kvant/25.png" alt=""></picture>
 						</div>
@@ -460,6 +518,38 @@
 						</div>
 					</li>
 				</ul>
+			</div>
+			<div id="popup__players-1" aria-hidden="true" class="popup">
+				<div class="popup__wrapper">
+					<div class="popup__content">
+						<button data-close type="button" class="popup__close"></button>
+						<div class="popup__players-body">
+							<div class="popup__players-top">
+								<div class="popup__players-left -ibg">
+									<picture><source srcset="img/players/1.webp" type="image/webp"><img src="img/players/1.png" alt=""></picture>
+								</div>
+								<div class="popup__players-right">
+									<div class="popup__players-name">
+										<h4>Софин Максим Павлович</h4>
+										<h3>29</h3>
+									</div>
+									<div class="popup__players-info">
+										<p class="text-20"><span class="text-20 bold">Амплуа: </span>защитник</p>
+										<p class="text-20"><span class="text-20 bold">Дата рождения:
+											</span>29 октября 2005 г.</p>
+										<p class="text-20"><span class="text-20 bold">Рост: </span>176 см</p>
+										<p class="text-20"><span class="text-20 bold">Вес: </span>60 кг</p>
+										<p class="text-20"><span class="text-20 bold">Заявлен: </span>с 05 августа 2022 г.</p>
+										<p class="text-20"><span class="text-20 bold">Время на поле: </span>21 мин.</p>
+									</div>
+								</div>
+							</div>
+							<div class="popup__players-bottom">
+								<picture><source srcset="img/popup/1.webp" type="image/webp"><img src="img/popup/1.png" alt=""></picture>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</main>
 		<footer class="footer">
@@ -491,6 +581,7 @@
 									<li><a href="games.html" class="text-20">Расписание игр</a></li>
 									<li><a href="arhiv.html" class="text-20">Архив матчей</a></li>
 									<li><a href="turnir.html" class="text-20">Турнирная таблица</a></li>
+									<li><a href="market.html" class="text-20">КВАНТ-маркет</a></li>
 									<li><a href="documents.html" class="text-20">Документы</a></li>
 								</ul>
 							</div>
@@ -503,9 +594,38 @@
 						</div>
 						<div class="footer__social">
 							<div class="footer__icons">
-								<a href="" class="footer-vk"></a>
-								<a href="" class="footer-tg"></a>
-								<a href="" class="footer-youtube"></a>
+								<a href="" class="footer-vk">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+										<g clip-path="url(#clip0_193_23797)">
+											<path d="M0 24C0 12.6862 0 7.02944 3.51472 3.51472C7.02944 0 12.6862 0 24 0H26C37.3137 0 42.9705 0 46.4853 3.51472C50 7.02944 50 12.6862 50 24V26C50 37.3137 50 42.9705 46.4853 46.4853C42.9705 50 37.3137 50 26 50H24C12.6862 50 7.02944 50 3.51472 46.4853C0 42.9705 0 37.3137 0 26V24Z" />
+											<path d="M26.5183 36C14.9018 36 8.27608 28.1171 8 15H13.8189C14.01 24.6276 18.2997 28.7057 21.6976 29.5465V15H27.1769V23.3033C30.5323 22.9459 34.0571 19.1622 35.2464 15H40.7256C39.8124 20.1291 35.9898 23.9129 33.2715 25.4685C35.9898 26.7297 40.3435 30.03 42 36H35.9686C34.6731 32.006 31.4455 28.9159 27.1769 28.4955V36H26.5183Z" fill="#390000" />
+										</g>
+										<defs>
+											<clipPath id="clip0_193_23797">
+												<rect width="50" height="50" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+								<a href="" class="footer-tg">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+										<g clip-path="url(#clip0_193_23807)">
+											<path d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M11.3164 24.7361C18.6045 21.5608 23.4643 19.4675 25.8959 18.4561C32.8386 15.5684 34.2813 15.0667 35.2216 15.0502C35.4284 15.0465 35.8908 15.0978 36.1903 15.3408C36.4433 15.5461 36.5128 15.8233 36.5462 16.0179C36.5794 16.2124 36.6209 16.6557 36.588 17.002C36.2117 20.9551 34.5838 30.5482 33.7556 34.9757C33.4051 36.8492 32.7151 37.4773 32.0471 37.5388C30.5953 37.6724 29.4928 36.5794 28.0867 35.6576C25.8864 34.2153 24.6433 33.3174 22.5075 31.91C20.0392 30.2834 21.6393 29.3894 23.046 27.9284C23.4141 27.5461 29.8108 21.7278 29.9346 21.2C29.9501 21.134 29.9644 20.8879 29.8183 20.758C29.6721 20.6281 29.4563 20.6725 29.3006 20.7078C29.08 20.7579 25.5649 23.0813 18.7555 27.6778C17.7578 28.3629 16.854 28.6967 16.0443 28.6792C15.1517 28.6599 13.4347 28.1745 12.1582 27.7596C10.5926 27.2507 9.34825 26.9816 9.4566 26.1173C9.51304 25.6671 10.133 25.2067 11.3164 24.7361Z" fill="#390000" />
+										</g>
+										<defs>
+											<clipPath id="clip0_193_23807">
+												<rect width="50" height="50" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+								<a href="" class="footer-youtube">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+										<path d="M20 32.2891V17.7109L33 25L20 32.2891Z" fill="#390000" />
+										<path d="M48.9451 13.3082C48.6606 12.2813 48.1035 11.345 47.3294 10.5931C46.5554 9.84113 45.5917 9.29987 44.5347 9.02347C40.642 8 25 8 25 8C25 8 9.35798 8 5.46534 9.02347C4.40832 9.29987 3.44457 9.84113 2.67055 10.5931C1.89652 11.345 1.33937 12.2813 1.05486 13.3082C0.328014 17.1649 -0.0247031 21.0793 0.00134356 25C-0.0247031 28.9207 0.328014 32.8352 1.05486 36.6918C1.33937 37.7187 1.89652 38.655 2.67055 39.4069C3.44457 40.1589 4.40832 40.7001 5.46534 40.9765C9.35798 42 25 42 25 42C25 42 40.642 42 44.5347 40.9765C45.5917 40.7001 46.5554 40.1589 47.3294 39.4069C48.1035 38.655 48.6606 37.7187 48.9451 36.6918C49.672 32.8352 50.0247 28.9207 49.9987 25C50.0247 21.0793 49.672 17.1649 48.9451 13.3082ZM20.0003 32.2857V17.7143L32.9817 25L20.0003 32.2857Z" />
+									</svg>
+								</a>
 							</div>
 							<a href="tel:8 (906) 506-92-52" class="footer__phone text-20 black">8 (906) 506-92-52</a>
 							<a href="mailto:info@kvant.futbol" class="footer__mail text-20 black">info@kvant.futbol</a>
@@ -569,8 +689,9 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.js?_v=20230724141348"></script>
-	<script src="js/script.js?_v=20230724141348"></script>
+	<script src="js/app.js?_v=20230725130318"></script>
+	<script src="js/script.js?_v=20230725130318"></script>
+	<!-- <script src="js/app.min.js?_v=20230725130318"></script> -->
 </body>
 
 </html>

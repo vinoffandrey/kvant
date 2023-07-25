@@ -107,5 +107,7 @@ h4 {
 	@include adaptiveValue("padding-right", 40, 20, $containerWidth, $minWidth, 1);
 	h2 {
 		color: var(--unnamed, #FFF);
+		max-width: 1840px;
+		margin: 0 auto;
 	}
 }

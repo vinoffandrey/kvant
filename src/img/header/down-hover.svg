@@ -1,10 +1,10 @@
-<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_230_2186)">
-<path d="M23.125 11.25L15.625 18.75L8.125 11.25" stroke="#390000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Arrows/down" clip-path="url(#clip0_200_35011)">
+<path id="Vector" d="M23.125 11.75L15.625 19.25L8.125 11.75" stroke="#891342" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <defs>
-<clipPath id="clip0_230_2186">
-<rect width="30" height="30" fill="white"/>
+<clipPath id="clip0_200_35011">
+<rect width="30" height="30" fill="white" transform="translate(0 0.5)"/>
 </clipPath>
 </defs>
 </svg>
