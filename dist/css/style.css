@@ -1498,10 +1498,6 @@ h4 {
   align-items: center;
   transition: all 0.3s ease 0s;
 }
-.menu__link.drop._spoller-active {
-   text-shadow: 1px 0 #891342;
-   color: var(--unnamed, #891342);
-}
 @media (min-width: 116.25em) {
   .menu__link.drop {
     gap: 0.5rem;
@@ -1571,6 +1567,10 @@ h4 {
   }
 }
 .menu__link.drop:hover, .menu__link.drop:active, .menu__link.drop:focus {
+  text-shadow: 1px 0 #891342;
+  color: var(--unnamed, #891342);
+}
+.menu__link.drop._spoller-active {
   text-shadow: 1px 0 #891342;
   color: var(--unnamed, #891342);
 }

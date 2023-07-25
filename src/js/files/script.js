@@ -195,7 +195,7 @@ function documentActions(e) {
 
 // buttonPartner.forEach(element => {
 // 	element.addEventListener('click', e => {
-// 		element.previousElementSibling.previousElementSibling.innerHTML = '<div class="dropdown">' + element.previousElementSibling.textContent + "<div class='partnerspage__item-back text-20'>Свернуть</div>" + '</div>';
+// 		element.previousElementSibling.previousElementSibling.innerHTML += '<div class="dropdown">' + element.previousElementSibling.textContent + "<div class='partnerspage__item-back text-20'>Свернуть</div>" + '</div>';
 // 		const buttonPartnerClose = document.querySelectorAll('.partnerspage__item-back');
 
 // 		buttonPartnerClose.forEach(elements => {

@@ -222,6 +222,8 @@
 					
 				}
 				&._spoller-active {
+					text-shadow: 1px 0 #891342;
+					color: var(--unnamed, #891342);
 					&:after {
 						background-image: url('../img/header/down-hover.svg');
 						transform: rotate(180deg);
