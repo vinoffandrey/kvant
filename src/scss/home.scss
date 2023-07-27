@@ -394,9 +394,102 @@
 .table {
 
 	&__body {
+		border-radius: 10px;
+		@media(max-width: 700px) {
+			overflow-x: scroll;
+		}
 		img {
 			max-width: 100%;
 			height: auto;
+		}
+	}
+}
+.table {
+
+	&__body {
+	}
+
+	&__body-top {
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		background-color: #F5F5F5;
+		@include adaptiveValue("padding-top", 12, 6, $containerWidth, $minWidth, 1);
+		@include adaptiveValue("padding-bottom", 12, 6, $containerWidth, $minWidth, 1);
+		@include adaptiveValue("padding-left", 30, 10, $containerWidth, $minWidth, 1);
+		@include adaptiveValue("padding-right", 30, 10, $containerWidth, $minWidth, 1);
+		display: grid;
+		@include adaptiveValue("gap", 40, 10, $containerWidth, 1200, 1);
+		align-items: center;
+		// grid-template: 1fr/repeat(10,minmax(40px,326px));
+		grid-template-columns: minmax(20px, 60px) minmax(30px, 140px) minmax(70px, 326px) minmax(25px, 110px) minmax(25px, 110px) minmax(25px, 110px) minmax(25px, 110px) minmax(80px, 150px) minmax(40px, 100px) minmax(190px, 243px);
+		@media(max-width: 700px) {
+			width: 700px;
+		}
+	}
+
+	&__body-item {
+	}
+
+	&__body-bottom {
+		text-decoration: none!important;
+		.table__body-item {
+			text-decoration: none!important;
+		}
+		.-ibg_container {
+			@include adaptiveValue("width", 40, 30, $containerWidth, $minWidth, 1);
+			@include adaptiveValue("height", 40, 30, $containerWidth, $minWidth, 1);
+		}
+		@media(max-width: 700px) {
+			width: 700px;
+		}
+	}
+
+	&__body-line {
+		@include adaptiveValue("padding-top", 20, 6, $containerWidth, $minWidth, 1);
+		@include adaptiveValue("padding-bottom", 20, 6, $containerWidth, $minWidth, 1);
+		@include adaptiveValue("padding-left", 26, 6, $containerWidth, $minWidth, 1);
+		@include adaptiveValue("padding-right", 26, 6, $containerWidth, $minWidth, 1);
+		display: grid;
+		align-items: center;
+		@include adaptiveValue("gap", 40, 10, $containerWidth, 1200, 1);
+		// grid-template: 1fr/repeat(10,minmax(40px,326px));
+		grid-template-columns: minmax(20px, 60px) minmax(30px, 140px) minmax(70px, 326px) minmax(25px, 110px) minmax(25px, 110px) minmax(25px, 110px) minmax(25px, 110px) minmax(80px, 150px) minmax(40px, 100px) minmax(190px, 243px);
+		&:nth-child(2n) {
+			background-color: #F5F5F5;
+			border: 4px solid var(--unnamed, #F5F5F5);
+		}
+		&:nth-child(2n+1) {
+			background-color: #fff;
+			border: 4px solid var(--unnamed, #FFF);
+		}
+		&:last-child {
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
+		&.active {
+			border-radius: 10px;
+			border: 4px solid var(--unnamed, #891342);
+		}
+	}
+
+	&__body-blocks {
+		display: flex;
+		gap: 3px;
+		span {
+			color: white;
+			@include adaptiveValue("padding-top", 10, 6, $containerWidth, $minWidth, 1);
+			@include adaptiveValue("padding-bottom", 10, 6, $containerWidth, $minWidth, 1);
+			@include adaptiveValue("padding-left", 12, 8, $containerWidth, $minWidth, 1);
+			@include adaptiveValue("padding-right", 12, 8, $containerWidth, $minWidth, 1);
+		}
+		.win {
+			background-color: #3FA41D;
+		}
+		.loss {
+			background-color: #E22123;
+		}
+		.draw {
+			background-color: #A7A7A7;
 		}
 	}
 }

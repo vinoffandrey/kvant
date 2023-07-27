@@ -161,9 +161,13 @@ body.popup-show::after {
 
 	&__players-bottom {
 		@include adaptiveValue("padding-bottom", 60, 30, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-right", 40, 20, $containerWidth, $minWidth, 1);
 		@include adaptiveValue("padding-top", 40, 20, $containerWidth, $minWidth, 1);
-		@include adaptiveValue("padding-left", 40, 20, $containerWidth, $minWidth, 1);
+		padding-left: 40px;
+		padding-right: 40px;
+		@media(max-width: 920px) {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
 		img {
 			max-width: 100%;
 			height: auto;
@@ -248,3 +252,180 @@ body.popup-show::after {
 	}
 }
 
+
+.popup {
+
+	&__players-bottom {
+		background-color: #FFF;
+	}
+
+	&__table-body {
+		@media(max-width: 700px) {
+			overflow-x: scroll;
+		}
+	}
+
+	&__table-top {
+		@include adaptiveValue("padding-top", 8, 6, $containerWidth, $minWidth, 1);
+		@include adaptiveValue("padding-bottom", 8, 6, $containerWidth, $minWidth, 1);
+		display: grid;
+		align-items: center;
+		gap: 30px;
+		grid-template-columns: 55px 93px 133px 28px 16px 16px 16px 22px 40px 150px; 
+		@media(max-width: 920px) {
+			gap: 10px;
+			grid-template-columns: minmax(35px, 55px) minmax(50px, 1fr) minmax(70px, 1fr) minmax(20px, 28px) minmax(15px, 16px) minmax(15px, 16px) minmax(15px, 16px) minmax(20px, 22px) minmax(30px, 40px) minmax(150px, 150px); 
+		}
+		@media(max-width: 700px) {
+			width: 700px;
+		}
+		.table__body-item {
+			color: #000;
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 130%;
+			text-align: left;
+			&:first-child {
+				@include adaptiveValue("margin-left", 10, 8, $containerWidth, $minWidth, 1);
+			}
+			&.red {
+				padding-top: 0;
+				padding-left: 0;
+				padding-bottom: 0;
+				height: 100%;
+				display: grid;
+				align-items: center;
+				grid-template-columns: 30px 16px 20px 16px;
+				gap: 15px;
+				@media(max-width: 920px) {
+					grid-template-columns: minmax(20px, 1fr) minmax(15px, 1fr) minmax(15px, 1fr) minmax(15px, 1fr);
+					@include adaptiveValue("gap", 15, 10, $containerWidth, $minWidth, 1);
+				}
+				@include adaptiveValue("padding-top", 8, 6, $containerWidth, $minWidth, 1);
+				@include adaptiveValue("padding-bottom", 8, 6, $containerWidth, $minWidth, 1);
+				@include adaptiveValue("padding-left", 10, 8, $containerWidth, $minWidth, 1);
+				@include adaptiveValue("padding-right", 10, 8, $containerWidth, $minWidth, 1);
+			}
+		}
+	}
+
+	&__table-wrapper {
+		background-color: #FAFAFA;
+		@media(max-width: 700px) {
+			width: 700px;
+		}
+		.table__body-item {
+			border-bottom: 1px solid #F5F5F5;
+			color: #000;
+			font-size: 11px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 130%;
+			text-align: left;
+			span {
+				font-weight: 700;
+				color: #fff;
+			}
+			&.red {
+				background-color: #FF585E;
+			}
+		}
+	}
+
+	&__table-line {
+		display: grid;
+		align-items: center;
+		gap: 30px;
+		grid-template-columns: 55px 93px 133px 28px 16px 16px 16px 22px 40px 150px; 
+		@media(max-width: 920px) {
+			grid-template-columns: minmax(35px, 55px) minmax(50px, 1fr) minmax(70px, 1fr) minmax(20px, 28px) minmax(15px, 16px) minmax(15px, 16px) minmax(15px, 16px) minmax(20px, 22px) minmax(30px, 40px) minmax(150px, 150px); 
+			gap: 10px;
+		}
+		.table__body-item {
+			@include adaptiveValue("padding-top", 8, 6, $containerWidth, $minWidth, 1);
+			@include adaptiveValue("padding-bottom", 8, 6, $containerWidth, $minWidth, 1);
+			&:first-child {
+				@include adaptiveValue("margin-left", 10, 8, $containerWidth, $minWidth, 1);
+			}
+			&.red {
+				padding-top: 0;
+				padding-left: 0;
+				padding-bottom: 0;
+				height: 100%;
+				display: grid;
+				align-items: center;
+				grid-template-columns: 30px 16px 20px 16px;
+				gap: 15px;
+				@media(max-width: 920px) {
+					grid-template-columns: minmax(20px, 1fr) minmax(15px, 1fr) minmax(15px, 1fr) minmax(15px, 1fr);
+					@include adaptiveValue("gap", 15, 10, $containerWidth, $minWidth, 1);
+				}
+				@include adaptiveValue("padding-top", 8, 6, $containerWidth, $minWidth, 1);
+				@include adaptiveValue("padding-bottom", 8, 6, $containerWidth, $minWidth, 1);
+				@include adaptiveValue("padding-left", 10, 8, $containerWidth, $minWidth, 1);
+				@include adaptiveValue("padding-right", 10, 8, $containerWidth, $minWidth, 1);
+			}
+		}
+	}
+
+	&__table-bottom {
+		background-color: #FAFAFA;
+		display: grid;
+		align-items: center;
+		gap: 30px;
+		grid-template-columns: 1fr 151px;
+		@media(max-width: 920px) {
+			grid-template-columns: minmax(200px, 1fr) minmax(150px, 150px);
+			gap: 10px;
+		}
+		@media(max-width: 700px) {
+			width: 700px;
+		}
+	}
+
+	&__table-bottom-left {
+		color: #000;
+		font-size: 11px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 130%;
+		text-align: left;
+		@include adaptiveValue("padding-left", 10, 8, $containerWidth, $minWidth, 1);
+	}
+
+	&__table-bottom-right {
+			border-bottom: 1px solid #F5F5F5;
+			color: #fff;
+			font-size: 11px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 130%;
+			&.red {
+				background-color: #FF585E;
+				padding-top: 0;
+				padding-left: 0;
+				padding-bottom: 0;
+				height: 100%;
+				display: grid;
+				align-items: center;
+				text-align: left;
+				grid-template-columns: 30px 16px 20px 16px;
+				gap: 15px;
+				@media(max-width: 920px) {
+					grid-template-columns: minmax(20px, 1fr) minmax(15px, 1fr) minmax(15px, 1fr) minmax(15px, 1fr);
+					@include adaptiveValue("gap", 15, 10, $containerWidth, $minWidth, 1);
+				}
+				@include adaptiveValue("padding-top", 8, 6, $containerWidth, $minWidth, 1);
+				@include adaptiveValue("padding-bottom", 8, 6, $containerWidth, $minWidth, 1);
+				@include adaptiveValue("padding-left", 10, 8, $containerWidth, $minWidth, 1);
+				@include adaptiveValue("padding-right", 10, 8, $containerWidth, $minWidth, 1);
+			}
+	}
+}
+.table {
+
+	&__body-item {
+		
+	}
+}
